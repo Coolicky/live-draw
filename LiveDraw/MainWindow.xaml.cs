@@ -40,6 +40,36 @@ namespace AntFu7.LiveDraw
         private static readonly Duration Duration7 = (Duration)Application.Current.Resources["Duration7"];
         private static readonly Duration Duration10 = (Duration)Application.Current.Resources["Duration10"];
 
+        private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            var windowPosX = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Left;
+            var windowPosY = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Top;
+
+            var minX = System.Windows.Forms.Screen.AllScreens.Min(r => r.WorkingArea.X);
+            var minY = System.Windows.Forms.Screen.AllScreens.Min(r => r.WorkingArea.Y);
+
+            var points = new List<System.Drawing.Point>();
+            
+            foreach (var screen in System.Windows.Forms.Screen.AllScreens)
+            {
+                points.Add(new System.Drawing.Point(screen.WorkingArea.Left,screen.WorkingArea.Top));
+                points.Add(new System.Drawing.Point(screen.WorkingArea.Right,screen.WorkingArea.Bottom));
+            }
+
+            var minPointX = points.Select(r => r.X).Min();
+            var maxPointX = points.Select(r => r.X).Max();
+            var minPointY = points.Select(r => r.Y).Min();
+            var maxPointY = points.Select(r => r.Y).Max();
+
+            var width = Math.Abs(maxPointX - minPointX);
+            var height = Math.Abs(maxPointY - minPointY);
+
+            Left = windowPosX + minX;
+            Top = windowPosY + minY;
+            Width = width;
+            Height = height;
+        }
+        
         /*#region Mouse Throught
 
         private const int WsExTransparent = 0x20;
