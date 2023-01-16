@@ -20,18 +20,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Window.Resources>
-        <SolidColorBrush Color="#FF86E238" x:Key="PaintingColor1" />
-        <SolidColorBrush Color="#FF38E2A8" x:Key="PaintingColor2" />
-        <SolidColorBrush Color="#FF359EC9" x:Key="PaintingColor3" />
-        <SolidColorBrush Color="#FF7E7E7E" x:Key="PaintingColor4" />
-        <SolidColorBrush Color="#FFE2CF38" x:Key="PaintingColor5" />
-        <SolidColorBrush Color="#FF7855D4" x:Key="PaintingColor6" />
-        <SolidColorBrush Color="#FFD570C2" x:Key="PaintingColor7" />
-        <SolidColorBrush Color="#FFD6D6D6" x:Key="PaintingColor8" />
-        <SolidColorBrush Color="#FFE27F38" x:Key="PaintingColor9" />
-        <SolidColorBrush Color="#FFDF2828" x:Key="PaintingColor10" />
-        <SolidColorBrush Color="#FFE2386D" x:Key="PaintingColor11" />
-        <SolidColorBrush Color="#FF1E1E1E" x:Key="PaintingColor12" />
 
         <Style TargetType="Path">
             <Setter Property="Fill" Value="White" />
