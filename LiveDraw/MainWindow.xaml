@@ -17,7 +17,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:AntFu7.LiveDraw"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Window.Resources>
         <SolidColorBrush Color="#FF86E238" x:Key="PaintingColor1" />
@@ -86,7 +85,7 @@
                 <Grid>
                     <Grid.Resources>
                         <Style TargetType="Border">
-                            <Setter Property="Background" Value="{StaticResource QuartertransparentGray}" />
+                            <Setter Property="Background" Value="{StaticResource QuarterTransparentGray}" />
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Trigger.EnterActions>
@@ -112,8 +111,7 @@
                         HorizontalAlignment="Right"
                         Margin="0,0,30,0"
                         Visibility="Collapsed"
-                        Width="20"
-                        x:Name="LeftDockingButton">
+                        Width="20">
                         <Border.CornerRadius>
                             <CornerRadius BottomRight="7" TopRight="7" />
                         </Border.CornerRadius>
@@ -224,17 +222,16 @@
                                     </Button>
                                     <Button
                                         Background="#338A8A8A"
-                                        Click="DetailToggler_Click"
+                                        Click="DetailToggle_Click"
                                         Style="{StaticResource ResponseButton}"
                                         ToolTip="Toggle more options"
-                                        VerticalAlignment="Center"
-                                        x:Name="DetailToggler">
+                                        VerticalAlignment="Center">
                                         <Path
                                             Data="{DynamicResource IconArrow}"
                                             Margin="0,0,1,1"
                                             Width="10">
                                             <Path.RenderTransform>
-                                                <RotateTransform x:Name="DetailTogglerRotate" />
+                                                <RotateTransform x:Name="DetailToggleRotate" />
                                             </Path.RenderTransform>
                                         </Path>
                                     </Button>
@@ -400,7 +397,7 @@
                                         HorizontalAlignment="Center"
                                         VerticalAlignment="Center"
                                         Width="5"
-                                        x:Name="brushPreview" />
+                                        x:Name="BrushPreview" />
                                 </local:ActivableButton>
                                 <local:ActivableButton
                                     Click="LineButton_Click"
