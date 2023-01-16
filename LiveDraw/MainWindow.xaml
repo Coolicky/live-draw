@@ -9,6 +9,8 @@
     UseLayoutRounding="True"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
+    d:DesignHeight="1080"
+    d:DesignWidth="1920"
     mc:Ignorable="d"
     x:Class="AntFu7.LiveDraw.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
