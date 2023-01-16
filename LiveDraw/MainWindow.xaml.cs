@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
+using AntFu7.LiveDraw.Controls;
 using Brush = System.Windows.Media.Brush;
 using Point = System.Windows.Point;
 
