@@ -1,7 +1,7 @@
 ﻿<Window
     AllowsTransparency="True"
     Background="{StaticResource FakeTransparent}"
-    Icon="Rescoures/icon.ico"
+    Icon="Resources/icon.ico"
     KeyDown="Window_KeyDown"
     Loaded="MainWindow_OnLoaded"
     ResizeMode="NoResize"

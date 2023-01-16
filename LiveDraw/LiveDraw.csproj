@@ -11,7 +11,7 @@
     </PropertyGroup>
     
     <PropertyGroup>
-        <ApplicationIcon>Rescoures\Icon.ico</ApplicationIcon>
+        <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
     
@@ -31,12 +31,12 @@
     </ItemGroup>
     
     <ItemGroup>
-        <Resource Include="Rescoures\Icon.ico"/>
+        <Resource Include="Resources\Icon.ico" />
     </ItemGroup>
     
     <ItemGroup>
-        <Resource Include="Rescoures\save29.png"/>
-        <Resource Include="Rescoures\undo6.png"/>
+        <Resource Include="Resources\save29.png" />
+        <Resource Include="Resources\undo6.png" />
     </ItemGroup>
     
     <ItemGroup>
